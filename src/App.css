@@ -1,0 +1,49 @@
+#aplicacion {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.icono {
+  height: 80px;
+  margin: 1rem auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.icono:hover {
+  filter: brightness(1.3);
+  transform: scale(1.1) rotate(3deg);
+}
+
+@keyframes rotar-infinito {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animar-logo {
+    animation: rotar-infinito 10s linear infinite;
+  }
+}
+
+.tarjeta {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: #f8fafc;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.detalle {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.5;
+}
